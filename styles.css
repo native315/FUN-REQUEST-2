@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
 :root {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Playfair Display",Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -11,7 +16,7 @@ nav ul {
 
     list-style-type:  none;
     margin: 0;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
 
     width: 99vw;
     position: fixed;
@@ -34,18 +39,37 @@ nav ul:hover {
     background-color: rgba(192, 192, 192, 0.8);
 }
 
+nav ul li {
+    font-size: x-large;
+}
+
 .hero {
     height: 90vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background-color: cornflowerblue;
+    background-color: rgb(142, 114, 179);
     padding: 3rem;
     margin: 0;
+    background-image: url("images/sunset-flower-field-stockcake.webp");
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 72px;
+}
+
+.hero p {
+    font-size: larger;
+}
+
+.purpletext {
+    color: purple;
 }
 
 .about-section {
-    background-color: purple;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    height: 100vh;
+    height: 85vh;
+    padding: 5rem 10rem;
 }
